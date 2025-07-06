@@ -99,3 +99,128 @@ font-weight: 500;
 
   }
 }
+
+#portfolio .portfolio-item{
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portfolio .portfolio-item .portfolio-link{
+     position:relative;
+    display: block;
+    margin: 0;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(153, 200, 0, 0.948);
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    transition: ease-in-out 0.25s;
+
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content{
+    font-size: 1.25rem;
+    color: #fff;
+
+}
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover{
+    opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-caption{
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+}
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading{
+    font-size: 1.5rem;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+
+}
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading{
+    font-style: italic;
+    font-family: "Roboto slab",sans-serif;
+
+}
+.timeline{
+    position: relative;
+    padding: 0;
+    list-style: none;
+
+}
+.timeline:before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: 1.5px;
+    content: "";
+    background-color: #ffffff;
+
+}
+.timeline > li.timeline-inverted > .timeline-panel:after{
+    right: auto;
+    left: 14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+
+}
+.timeline > li.last-child{
+    margin-bottom: 0;
+
+}
+.timeline timeline-heading h4, .timeline-heading .subheading{
+    margin-top: 0;
+    color: inherit;
+
+}
+.timeline .timeline-body>ul,
+.timeline .timeline-body p{
+    margin-bottom: 0;
+}
+@media(min-width:768px){
+.timeline::before{
+    left: 50%;
+
+}
+.timeline >li{
+    min-height: 100px;
+    margin-bottom: 100px;
+
+    
+}
+.timeline >li .timeline-panel{
+    float: left;
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+
+}
+.timeline > li .timeline-image{
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+}
+.timeline > li .timeline-image h4, .timeline >li .timeline-image h4{
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 16px;
+}
+.timeline > li.timeline-inverted > .timeline-panel{
+    float: right;
+    padding: 0 30px, 20px 20px;
+    text-align: left;
+
+}
+}
+@media(min-width:992px){
+    
+}
